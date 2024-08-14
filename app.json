@@ -4,10 +4,32 @@
     "web": {
       "bundler": "metro"
     },
-    "plugins": [
-      "expo-router"
-    ],
-    "name": "my-app",
-    "slug": "my-app"
+    "plugins": ["expo-router"],
+    "name": "Recharge",
+    "slug": "my-app",
+    "orientation": "portrait",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain"
+    },
+    "icon": "./assets/icon.png",
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.dev.sathya1701.myapp"
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "bc5e5b0c-77f9-4434-9338-113da6930a65"
+      }
+    },
+    "ios": {
+      "bundleIdentifier": "com.dev.sathya1701.myapp"
+    }
   }
 }

@@ -1,13 +1,30 @@
-# Expo Router Example
+# Recharge Mobile Application
 
-Use [`expo-router`](https://docs.expo.dev/router/introduction/) to build native navigation using files in the `app/` directory.
+A React Native mobile application with a Flask backend and MySQL database. This application supports three user roles: Admin, Distributor, and Retailer. The core functionality involves a hierarchical money transfer system and the ability for all users to generate real-time recharges and analytical reports.
 
-## 🚀 How to use
+## Features
 
-```sh
-npx create-expo-app -e with-router
-```
+- **User Roles**:
 
-## 📝 Notes
+  - **Admin**: Manages the entire system, oversees distributors, and controls the flow of money to distributors.
+  - **Distributor**: Receives money from the Admin and transfers it to Retailers.
+  - **Retailer**: Receives money from Distributors and handles the end-user transactions.
 
-- [Expo Router: Docs](https://docs.expo.dev/router/introduction/)
+- **Real-Time Recharge**:
+  - All users can perform real-time recharges based on their roles.
+- **Reporting and Analytics**:
+  - Users can generate reports to analyze their transaction history and financial status.
+
+## Tech Stack
+
+- **Frontend**: React Native
+- **Backend**: Flask
+- **Database**: MySQL
+
+## Installation
+
+### Prerequisites
+
+- Node.js
+- Python
+- MySQL
